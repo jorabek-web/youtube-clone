@@ -1,18 +1,17 @@
-import { Container } from "./components/common/container"
-import { Layout } from "./components/common/layout"
-import { Home } from "./components/pages/home/home"
-
-
+import { BrowserRouter as Router } from "react-router-dom";
+import { Container } from "./components/common/container";
+import { Home } from "./components/pages/home/home";
 
 function App() {
-
   return (
     <>
-      <Container >
-        <Home />
-      </Container>
+      <Router>
+          <Container>
+            <Home />
+          </Container>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
