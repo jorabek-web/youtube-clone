@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <div className="w-full h-[60px] flex items-center justify-between  px-4 border-b border-white">
       <div>
-        <div className="flex gap-10 ml-5">
+        <div className="flex gap-5 ml-5">
      
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="#909090"/>
@@ -26,7 +26,7 @@ export const Navbar = () => {
 
       </div>
       <div className="flex">
-        <input type="text" placeholder="Search" className="w-[575px] h-[32px] bg-transparent p-4 text-[#999999] text-[16px] border border-neutral-700 " />
+        <input type="text" placeholder="Search" className="w-[575px] h-[32px] bg-transparent p-4 text-[#999999] text-[16px] border border-neutral-700 outline-none text-white" />
         <button className="w-[50px] h-[34px] bg-[#424242] border border-neutral-700">
           <svg className="ml-4" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.9167 9.66667H10.2583L10.025 9.44167C10.8417 8.49167 11.3333 7.25833 11.3333 5.91667C11.3333
