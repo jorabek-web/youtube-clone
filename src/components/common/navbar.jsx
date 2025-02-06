@@ -1,13 +1,13 @@
 
 
-export const Navbar = () => {
+export const Navbar = ({ getData, setQuery }) => {
     return (
-        <div className="w-full h-[60px] flex items-center justify-between  px-4 border-b border-white">
+        <div className="w-full h-[60px] flex items-center justify-between  px-4 ">
             <div>
-                <div className="flex gap-10 ml-5">
+                <div className="flex gap-5 ml-5">
 
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="#909090" />
+                        <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="#fff" />
                     </svg>
 
                     <svg width="107" height="24" viewBox="0 0 107 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,15 +25,15 @@ export const Navbar = () => {
                 </div>
 
             </div>
-            <div className="flex">
-                <input type="text" placeholder="Search" className="w-[575px] h-[32px] bg-transparent outline-none p-4 text-[#999999] text-[16px] border border-neutral-700 " />
-                <button className="w-[50px] h-[34px] bg-[#424242] border border-neutral-700">
-                    <svg className="ml-4" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="flex h-[40px]">
+                <input type="text" placeholder="Search" onChange={(e) => setQuery(e.target.value)} className="w-[575px] h-full bg-transparent outline-none p-4 text-[#fff] text-[17px] rounded-tl-full rounded-bl-full border border-neutral-700 " />
+                <button onClick={getData} className="w-[50px] h-full bg-[#424242] border border-neutral-700 rounded-tr-full rounded-br-full text-center cursor-pointer">
+                    <svg className="ml-3 mt-1" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.9167 9.66667H10.2583L10.025 9.44167C10.8417 8.49167 11.3333 7.25833 11.3333 5.91667C11.3333
- 2.925 8.90833 0.5 5.91667 0.5C2.925 0.5 0.5 2.925 0.5 5.91667C0.5 8.90833 2.925 11.3333 5.91667 11.3333C7.25833 11.3333
-  8.49167 10.8417 9.44167 10.025L9.66667 10.2583V10.9167L13.8333 15.075L15.075 13.8333L10.9167 9.66667ZM5.91667 9.66667C3.84167
-   9.66667 2.16667 7.99167 2.16667 5.91667C2.16667 3.84167 3.84167 2.16667 5.91667 2.16667C7.99167 2.16667 9.66667 3.84167 9.66667
-    5.91667C9.66667 7.99167 7.99167 9.66667 5.91667 9.66667Z" fill="#909090" />
+                        2.925 8.90833 0.5 5.91667 0.5C2.925 0.5 0.5 2.925 0.5 5.91667C0.5 8.90833 2.925 11.3333 5.91667 11.3333C7.25833 11.3333
+                        8.49167 10.8417 9.44167 10.025L9.66667 10.2583V10.9167L13.8333 15.075L15.075 13.8333L10.9167 9.66667ZM5.91667 9.66667C3.84167
+                        9.66667 2.16667 7.99167 2.16667 5.91667C2.16667 3.84167 3.84167 2.16667 5.91667 2.16667C7.99167 2.16667 9.66667 3.84167 9.66667
+                        5.91667C9.66667 7.99167 7.99167 9.66667 5.91667 9.66667Z" fill="#fff" />
                     </svg>
                 </button>
             </div>
