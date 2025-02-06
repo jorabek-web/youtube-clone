@@ -16,7 +16,11 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.1.5",
+=======
+    "router-dom": "^3.0.1",
+>>>>>>> 762354cc242df835d7141ddd4f8515524b82cc9f
     "tailwindcss": "^4.0.3"
   },
   "devDependencies": {
