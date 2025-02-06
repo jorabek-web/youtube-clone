@@ -1,26 +1,32 @@
 
-import { useEffect, useState } from "react"
-import { API_ENDPOINT } from "../../../constands"
+// import { useEffect, useState } from "react"
+// import { API_ENDPOINT } from "../../../constands"
+
+import { Container } from "../../common/container"
+import { InterFace } from "../../common/interFace"
+import { Layout } from "../../common/layout"
+
+// import { getAllData } from "../../../utils/api/api"
 export const Home = () => {
-    const [data, setData] = useState([])
+    // const [data, setData] = useState([])
 
-    async function getData(endpoint) {
-        const response = await fetch(endpoint)
+    // async function getData() {
+    //     const data = await getAllData(API_ENDPOINT)
+        
+    //     setData(data)
+    // }
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`)
-        }
-        return await response.json()
-    }
+    // useEffect(() => {
+    //     getData()
+    // }, [])
 
-    useEffect(() => {
-        getData(API_ENDPOINT)
-    }, [])
-    console.log(data)    
+    // console.log(data)
 
     return (
         <div>
-            <h1 className="text-center text-black font-bold text-4xl">home</h1>
+            <Layout>
+                <InterFace />
+            </Layout>
         </div>
     )
 }
