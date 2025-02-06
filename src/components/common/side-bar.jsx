@@ -41,7 +41,7 @@ export const SideBar = () => {
             </Link>
           </div>
           <div className="px-8 py-2 hover:bg-gray-700 cursor-pointer">
-            <Link to="#" className="flex items-center gap-[25px]">
+            <Link to="/watchLater" className="flex items-center gap-[25px]">
               <svg
                 width="18"
                 height="18"
