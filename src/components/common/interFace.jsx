@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react"
-import { getAllData } from "../../utils/api/api";
 
 
 const videos = [
