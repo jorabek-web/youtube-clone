@@ -44,8 +44,13 @@ export const SideBar = ({ isOpenSidebar }) => {
               History
             </Link>
           </div>
+<<<<<<< HEAD
           <div onClick={() => setSidebarBtn("watch")} className={`px-8 py-2 hover:bg-[#333333] ${sidebarBtn === "watch" && "bg-[#272626]"} rounded-md cursor-pointer`}>
             <Link to="/watch" className={`flex items-center ${isOpenSidebar ? "gap-[25px] flex-row" : "flex-col gap-2 text-[10px]"}`}>
+=======
+          <div className="px-8 py-2 hover:bg-gray-700 cursor-pointer">
+            <Link to="/watchLater" className="flex items-center gap-[25px]">
+>>>>>>> 803ede8a238144ec888dd9718ed3b57001bd4ec9
               <svg
                 width="18"
                 height="18"

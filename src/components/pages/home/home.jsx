@@ -2,13 +2,18 @@ import { Route, Routes } from "react-router-dom";
 import { InterFace } from "../../common/interFace";
 import { Layout } from "../../common/layout";
 import { History } from "../../common/history";
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { getAllData } from "../../../utils/api/api";
 import { VideoInterFace } from "../../common/video-interface";
+=======
+import { WatchLater } from "../../common/watchLater";
+>>>>>>> 803ede8a238144ec888dd9718ed3b57001bd4ec9
 
 export const Home = () => {
 
 
+<<<<<<< HEAD
     const [query, setQuery] = useState('all')
     const [youtubeData, setYoutubeData] = useState('')
     const [isOpenSidebar, setIsOpenSidebar] = useState(false)
@@ -36,4 +41,17 @@ export const Home = () => {
             </Layout>
         </div>
     );
+=======
+  return (
+    <div>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<InterFace />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/watchLater" element={<WatchLater />} />
+        </Routes>
+      </Layout>
+    </div>
+  );
+>>>>>>> 803ede8a238144ec888dd9718ed3b57001bd4ec9
 };
