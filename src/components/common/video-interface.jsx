@@ -61,7 +61,7 @@ export const VideoInterFace = ({ youtubeData }) => {
 
 
     return (
-        <div className="px-16 py-8 text-white">
+        <div className="px-10 py-8 text-white">
             {/* Video section */}
             <div className="w-full flex gap-6">
                 <div className="w-8/12">
