@@ -47,11 +47,11 @@ export const WatchLater = () => {
         <button onClick={clearAll} className="text-red-400 border border-red-400 px-4 py-1 rounded-lg cursor-pointer">Clear All</button>
         {isModalOpen && (
           <div className="absolute top-[60px] left-0 bg-gray-800 text-white rounded-lg shadow-lg p-4 w-[200px]">
-            <ul className="space-y-2">
+            <div className="space-y-2">
               <div className="cursor-pointer hover:bg-gray-700 p-2 rounded">Newest</div>
               <div className="cursor-pointer hover:bg-gray-700 p-2 rounded">Oldest</div>
               <div className="cursor-pointer hover:bg-gray-700 p-2 rounded">Most Popular</div>
-            </ul>
+            </div>
           </div>
         )}
       </div>
