@@ -4,3 +4,11 @@
 body {
     background: #0f0f0f;
 }
+
+::-webkit-scrollbar {
+    background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #909090;
+}
